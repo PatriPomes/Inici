@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+  <head>
+<link rel="stylesheet" type="text/css" href="formulario.css">
+  </head>
+ 
+  <h1 id="title"> Iniciación al mundo del vino</h1>
+  <img id="container" src="https://cdn-icons-png.flaticon.com/512/2722/2722399.png" alt="Imagen 1'>
+  <p id="description">Una vez finalizado el curso, responde a las siguientes preguntas como valoración. Por favor rellena todas las casillas.</p>
+
+  <form id="survey-form">
+    <label id="name-label">
+    <input type="text" name="name" id="name" placeholder= "Nombre" required> 
+    <br>
+    <label id="email-label">
+    <input type="email" name="email" id="email" placeholder="Dirección de mail" required> 
+    <br>
+    <label id="number-label">
+    <input type="number" name="number" id="number"  min="18" max="99" placeholder="Edad" required> 
+    <br> 
+    
+    <br>
+    <label for="dropdown"> ¿Que tipo de vino te gustaba mas antes de empezar el curso?</label>
+    <select id="dropdown" name="dropdown">
+      <option value="tinto">Tinto</option>
+      <option value="blanco">Blanco</option>
+      <option value="rosado">Rosado</option>
+     </select>
+  </br>
+  <fieldset>
+    <legend>Valora la <b>cantidad</b> de vinos ofrecidos en el curso</legend>
+     <input type="radio" id="1" name="cantidad" value="1">
+  <label for="1">1 (Escasa)</label>
+    <input type="radio" id="2" name="cantidad" value="2">
+  <label for="2">2</label>
+  <input type="radio" id="3" name="cantidad" value="3">
+  <label for="3">3</label>
+  <input type="radio" id="4" name="cantidad" value="4">
+  <label for="4">4</label>
+  <input type="radio" id="5" name="cantidad" value="5">
+  <label for="5">5(Excelente)</label>
+  </fieldset>
+
+  <fieldset>
+  <legend>Valora la <b>calidad</b> de los vinos ofrecidos en el curso</legend>
+        <input type="radio" id="1" name="cantidad" value="1">
+  <label for="1">1 (Escasa)</label>
+    <input type="radio" id="2" name="cantidad" value="2">
+  <label for="2">2</label>
+  <input type="radio" id="3" name="cantidad" value="3">
+  <label for="3">3</label>
+  <input type="radio" id="4" name="cantidad" value="4">
+  <label for="4">4</label>
+  <input type="radio" id="5" name="cantidad" value="5">
+  <label for="5">5(Excelente)</label>
+  </fieldset>
+  <br>
+  <legend>¿Que tipos de vino te gustaria conocer con mas profundidad? </legend>
+    <input type="checkbox" id="tipo" name="cosecha" value="Cosecha">
+    <label for="tipo"> Cosecha</label>
+    <br>
+    <input type="checkbox" id="tipo2" name="joven" value="Joven">
+    <label for="tipo2"> Joven</label>
+    <br>
+    <input type="checkbox" id="tipo3" name="crianza" value="Crianza">
+    <label for="tipo3"> Crianza</label>
+    <br>
+    <input type="checkbox" id="tipo4" name="reserva" value="Reserva">
+    <label for="tipo4"> Resereva</label>
+    <br>
+    <input type="checkbox" id="tipo5" name="espumoso" value="Espumoso">
+    <label for="tipo5"> Espumoso</label>
+    <br>
+  <legend><b>Comentarios:</b></legend>
+    <textarea name="message" rows="5" cols="45"></textarea>
+    <br>
+  <button type="submit" id="submit">Enviar!</button>
+    </form>
+  
+   
+    
+</html>
